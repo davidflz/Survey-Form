@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Survey form </title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Nunito+Sans:wght@200&family=Open+Sans&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<main>
+  <header><h1 id="title">Survey form</h1></header>
+ 
+  <p id="description"> A cool form about interesting things</p>
+ 
+  <form id="survey-form" class="formBox">
+   
+    <div class="form-group">
+    <label for="name" id="name-label">Name</label>
+    <input id="name" name="name" type="text" class="formControl" placeholder="Enter your name" required>
+    </div>
+    
+    <div class="form-group">
+    <label for="email" id="email-label">Email</label>
+    <input id="email" name="email" type="email" class="formControl" placeholder="Enter your email" required>
+    </div>
+    
+    <div class="form-group">
+    <label for="number" id="number-label">Cell phone number</label>
+    <input id="number" name="number" type="number" class="formControl" placeholder="Enter your cell phone number" min="910000000" max="999999999" required>
+    </div>
+    
+     <div class="form-group radioMargin">
+       <p>Select your gender</p>
+       <div >
+    <input type="radio" name="gender" id="male" value="male" checked>
+       <label for="male">Male</label>
+       </div>
+       <div>
+    <input type="radio" name="gender" id="female" value="female">
+       <label for="female">Female</label>
+       </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="dropdown">Favourite meal</label>       
+      <select name="favourite-meal" id="dropdown" class="formControl" required>
+        <option disabled selected value>Choose your favourite meal</option>
+        <option value="breakfast">Breakfast</option>
+        <option value="lunch">Lunch</option>
+        <option value="afternoonSnack">Afternoon snack</option>
+        <option value="dinner">Dinner</dinner>
+      </select>
+    </div>
+    <div>
+     <p> What type of beverages do you drink on your favourite meal?</p>
+      <div class="checkboxMargin">
+      <input type="checkbox" value="wine" name="wine" id="wine" checked >
+      <label for="wine">Wine</label><br>
+        </div>
+      <div class="checkboxMargin">
+      <input type="checkbox" value="beer" name="beer" id="beer">
+      <label for="beer">Beer</label><br>
+        </div>
+      <div class="checkboxMargin">
+      <input type="checkbox" value="juice" name="juice" id="juice">
+      <label for="juice">Juice</label><br>
+      </div>
+      <div class="checkboxMargin">
+      <input type="checkbox" value="tea" name="tea" id="tea">
+      <label for="tea">Tea</label><br>
+      </div>
+      <div class="checkboxMargin">
+      <input type="checkbox" value="milk" name="milk" id="milk">
+      <label for="milk">Milk</label><br>
+      </div>
+      <div class="checkboxMargin">
+      <input type="checkbox" value="vegan" name="vegan" id="vegan">
+      <label for="vegan">Plant based beverages</label><br>
+      </div>
+      <div class="checkboxMargin">
+      <input type="checkbox" value="spiritual" name="spiritual" id="spiritual">
+      <label for="spiritual">Spiritual drinks</label><br>
+      </div>
+      <div class="checkboxMargin">
+      <input type="checkbox" value="smoothie" name="smoothie" id="smoothie">
+      <label for="smoothie">Smoothie</label><br>
+    </div>
+  <div>
+    <p>Any additional comments?</p>
+    <textarea id="comments" name="comments" placeholder="Enter you comment here"></textarea>
+  </div>
+  <div class=" submitButton">
+    <input type="submit" id="submit">
+      </div>
+      </main>
+</html>

@@ -1,0 +1,174 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  background: linear-gradient(
+    -65deg,
+    #108dc7,
+    #ef8e38
+  )
+}
+
+main{
+  max-width: 750px;
+  display:block;
+  margin-left: auto;
+  margin-right:auto; 
+  padding: 0 1em 1em 1em;
+  font-family: open sans;
+}
+
+
+
+#title{
+  text-align: center;
+  padding: 0.67em 0 0.67em 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: merriweather;
+}
+#description{
+  text-align:center;
+  font-size: 1.1rem;
+}
+.formBox{
+  max-width: 650px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+.formControl{
+  width: 100%;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  padding: 0.6em;
+  border: 0;
+  box-shadow: 0.1em 0.1em 0.5em;
+  background-color: #FAE1CA !important;
+  
+}
+.form-group{
+  margin: 0 auto 1.5rem auto;
+  border: 1px;
+  }
+
+ /* Specilly used for Firefox, remove inputer number arrows */
+input[type=number] {
+  -moz-appearance: textfield;
+  font-family: nunito sans  ;
+}
+ /* Chrome, Safari, Edge, Opera, remove input number arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+input[type="radio"] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.3rem;
+  border-radius: 15px 50px 50px;
+  border-style: solid;
+  border-width: 0.2rem;
+  border-color: #363237;
+}
+
+input[type="radio"]:checked + *::before {
+  background: radial-gradient(#363237 0%, #363237 40%, transparent 50%, transparent);
+}
+
+.radioMargin{
+  padding-left: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.radioMargin > div{
+  flex: 1 auto;
+}
+
+.radioMargin > p{
+  float: left;
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+      }
+
+input[type="checkbox"] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.3rem;
+  border-radius: 15px 50px 50px;
+  border-style: solid;
+  border-width: 0.2rem;
+  border-color: #363237;
+}
+
+input[type="checkbox"]:checked + *::before {
+  background: radial-gradient(#363237 0%, #363237 40%, transparent 50%, transparent);
+}
+
+.checkboxMargin{
+  margin-bottom: 0.3rem;
+}
+
+input[type="text"], input[type="email"], select {
+  font-family: nunito sans;
+}
+
+textarea{
+  resize: none;
+  width: 100%;
+  height: 7rem;
+  box-shadow: 0.1em 0.1em 0.5em;
+  border-radius: 5px;
+  padding: 0.5rem 0.6rem;
+  background-color: #FAE1CA;
+  font-family: nunito sans ;
+  
+}
+
+input[type="submit"]{
+  box-shadow: 0.1em 0.1em 0.5em;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  padding: 0.4rem;
+  cursor: pointer;
+  width: 60%;
+  background-color: #FAE1CA;
+  font-size: 20px;
+  font-family: nunito sans;
+  
+}
+
+.submitButton{
+  text-align:center;
+  font: none;
+  font-family: comic sans;
+ }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 30px #FAE1CA inset;
+}
